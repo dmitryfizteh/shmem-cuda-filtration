@@ -2,7 +2,7 @@
 #define DEFINES_H 
 
 #define TEST
-#define DEFINES_FILE "C://Users//dmitry//Documents//Visual Studio 2010//Projects//NAPL_Filtration//defines.ini"
+#define DEFINES_FILE "C://Users//dmitry//Documents//Visual Studio 2010//Projects//Buckley-Leverett//defines.ini"
 #define timeX 500
 
 #define mu1 0.001
