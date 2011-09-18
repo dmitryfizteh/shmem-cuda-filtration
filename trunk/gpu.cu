@@ -73,7 +73,7 @@ __global__ void assign_P2_Xi1_Xi2_ro1_ro2_kernel(ptr_Arrays DevArraysPtr, int lo
 		double S_e = (1 - S2 - (*gpu_def).S_wr[media]) / (1 - (*gpu_def).S_wr[media]);
 		double k1 = pow(S_e, (2. + 3. * (*gpu_def).lambda[media]) / (*gpu_def).lambda[media]);
 		double k2 = (1. - S_e) * (1. - S_e) * (1 - pow(S_e, (2. + (*gpu_def).lambda[media]) / (*gpu_def).lambda[media]));
-		double P_k = (*gpu_def).P_d[media] * pow((1 - S2 - (*gpu_def).S_wr[media]) / (1 - (*gpu_def).S_wr[media]), -1 / (*gpu_def).lambda[media]);
+		double P_k = 0;//(*gpu_def).P_d[media] * pow((1 - S2 - (*gpu_def).S_wr[media]) / (1 - (*gpu_def).S_wr[media]), -1 / (*gpu_def).lambda[media]);
 
 		DevArraysPtr.P2[i+j*localNx+k*localNx*((*gpu_def).Ny)] = P1 + P_k;
 		DevArraysPtr.Xi1[i+j*localNx+k*localNx*((*gpu_def).Ny)] = -1 * (*gpu_def).K[media] * k1 / mu1;
