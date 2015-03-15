@@ -1,0 +1,3 @@
+The work deals with the development of a new approach for simulation of multiphase fluid flows in porous media. Computations of such flows are extremely important while developing technologies of oil recovery, constructing hydraulic
+structures, solving ecological problems aimed at prevention of the soil and groundwater contaminat ion by petroleum products etc.
+Used: C/C++, CUDA, MPI, SHMEM-library.
